@@ -1,0 +1,56 @@
+.box-one {
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    background-color: yellow;
+    color: blue;
+
+    position: relative;
+    top: 50px; /* move relative where it is currently */
+    left: 50px; /* move 50 relative to where it would have been */
+}
+
+.box-two {
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    background-color: purple;
+
+
+    position: absolute; /* when applied, you remove the flow of the document and 
+                            all elements act that this box does not exist */
+    top: 5px; /* since it's absolute, it goes to the top, down 5px */
+    left: 20px; /* left position is from left coords of page */
+
+    /* remember: notice that box 2 is on top of "position label" */
+    z-index: -1; /* can say 1, 10, 500 etc etc */
+}
+
+.box-three {
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    background-color: yellow;
+    color: blue;
+
+    left: 300px;
+    position: relative;
+}
+
+.box-four {
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    background-color: yellow;
+    color: blue;
+    
+    position: fixed;
+    top: 110;
+    left: 300;
+}
+
+.red-stick {
+    height: 1000px;
+    background-color: red;
+    width: 20px;
+}

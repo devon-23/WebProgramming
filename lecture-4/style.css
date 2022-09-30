@@ -1,0 +1,40 @@
+/*
+ul {  Element selector
+    list-style-type: none;
+}
+*/
+
+p {
+    color: blue;
+}
+
+div div p {
+    color: green;
+}
+
+/* Show 4 different link states we can affect */
+a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* a:link = standard links on your page */
+a:link {
+    color: green;
+}
+
+/* a:vistied = links that user has been to before */
+a:visited {
+    color: gold;
+}
+
+/* a:hover = what styling do you want to apply when hovering */
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* a:active when user clicks the link; when uses presses the button */
+a:active {
+    color: red;
+}

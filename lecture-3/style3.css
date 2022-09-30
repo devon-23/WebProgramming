@@ -1,0 +1,14 @@
+header {
+    width: 100vw;
+    height: 100vw;
+    /* background-color: black; */
+    background-image: url(sky.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+* { /* makes it all black */
+    margin: 0px;
+    padding: 0px;
+}

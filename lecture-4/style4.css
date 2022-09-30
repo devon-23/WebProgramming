@@ -1,0 +1,19 @@
+nav {
+    width: 90vw; /* 90% of the users screen (veiwpoint width / screen width) */
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5971AD;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}

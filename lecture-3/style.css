@@ -1,0 +1,93 @@
+/*
+p {
+    color: orange;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+    Comment
+
+
+h1 { 
+    color: purple;
+    text-align: center;
+}
+*/
+
+/* div {
+    height: 220px;
+    width: 220px;
+    
+    border-width: 8px;
+    border-style: dotted;
+    border-color: rgb(216, 171, 171);
+   
+    border: 2px solid blueviolet;
+} */
+
+/* 
+h4 {
+    border: 2px solid blue;
+    width: 200px;
+    padding: 0px 0px 60px 50px;
+    background-color: grey; */
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    /* text-align: center; */
+/* } */
+
+/* h4 {
+    border: 2px solid blue;
+    width: 25vw;
+} */
+
+/* .div-container {
+    width: 200px
+} */
+
+/* .box-one {
+    border: 3px solid blue;
+    background-color: yellow;
+    padding: 50px;
+    width: 60px;
+    display: inline-block; */
+    /* margin: 70px; */
+    /* margin-left: 70px;
+    margin-bottom: 10px; */
+
+    /* margin: 70px 10px 20px 20px; */
+
+    /* this ensures that div is not a blocked element */
+/* } */
+
+/* .box-two {
+    border: 3px solid blue;
+    background-color: yellow;
+    padding: 50px;
+    width: 60px;
+    display: inline-block;
+} */
+
+.box {
+    width: 80px;
+    height: 20px;
+    padding: 50px;
+    background-color: yellow;
+    margin: 10px;
+    display: inline-block;
+}
+
+.main-container {
+    width: 100%;
+    /* text-align: center; */
+}
+
+/* .row-one {
+    background-color: beige;
+} */
+
+.row-one, .row-two {
+    width: 100%;
+    border: 5px solid green;
+}

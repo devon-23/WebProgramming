@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey</title>
+        <style>
+            body {
+                background-color: aliceblue
+            }
+            h5 {
+                color: burlywood;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            div {
+                background-color: beige;
+            }
+
+            p {
+                color: darkkhaki;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            .majors {
+                background-color: rgb(249, 228, 158);
+                color: blueviolet;
+                border-style: inset;
+            }
+
+            .navigation {
+                color: green;
+                background-color: rgb(219, 234, 248);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Rowan University Survey</h1>
+        <h4><span><i>not actually affiliated with Rowan University</i></span></h4>
+        <p><a href="https://www.rowan.edu">Rowan</a></p>
+
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li> <!-- anchor links-->
+                        <a href="#one">Question 1</a>
+                    </li>
+                    <li>
+                        <a href="#two">Question 2</a>
+                    </li>
+                    <li>
+                        <a href="#three">Question 3</a>
+                    </li>
+                    <li>
+                        <a href="#four">Question 4</a>
+                    </li>
+                    <li>
+                        <a href="#five">Question 5</a>
+                    </li>
+                    <li>
+                        <a href="#six">Question 6</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- input form -->
+        <div> 
+            <form>
+                <input type="text" placeholder="Username" name="userName" required>
+                <br>
+                <input type="email" placeholder="Rowan Email" name="email" required>
+                <br>
+                <input type="password" placeholder="password" name="passWord" required>
+                <br>
+
+                <a name="one"></a>
+                <h5><span>Question 1</span>: What is your favorite color?</h5>
+                <input type="color">
+
+                <a name="two"></a>
+                <h5><span>Question 2</span>: When is your anticipated graduation date?</h5>
+                <input type="date">
+                <br>
+
+                <a name="three"></a>
+                <!-- drop down -->
+                <label><h5><span>Question 3</span>: What is your favorite building on campus?</h5> <!-- this was drop down list -->
+                    <select name="destination">
+                        <option value="robinson">Robinson</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="discovery">Discovery</option>
+                        <option value="westby">Westby</option>
+                        <option value="bunce">Bunce</option>
+                        <option value="business">Business Hall</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+
+                <a name="four"></a>
+                <!-- radio buttons -->
+                <label><h5><span>Question 4</span>: Do you live on campus or do you commute?</h5>
+                    <label>
+                        <p>On campus<input type="radio" name="housing" value="campus"></p> 
+                    </label>
+                    <label>
+                        <p>Commute<input type="radio" name="housing" value="commute"></p>
+                    </label>
+                </label>
+
+                <a name="five"></a>
+                <!-- checkbox input -->
+                <label><h5><span>Question 5</span>: Which of these businesses have you gone to on Rowan Boulevard?</h5>
+                    <i>select all that apply</i>
+                    <label>
+                        <p>Barnes and Noble <input type="checkbox" name="roBo" value="BarnesNoble"></p>
+                    </label>
+                    <label>
+                        <p>Ry's Bagels<input type="checkbox" name="roBo" value="rys"></p>
+                    </label>
+                    <label>
+                        <p>LaScala's Fire<input type="checkbox" name="roBo" value="laScala"></p>
+                    </label>
+                    <label>
+                        <p>Kung Fu Tea<input type="checkbox" name="roBo" value="kungFuTea"></p>
+                    </label>
+                    <label>
+                        <p>Chickie's & Pete's<input type="checkbox" name="roBo" value="chickies"></p>
+                    </label>
+                    <label>
+                        <p>Cookie Munchers<input type="checkbox" name="roBo" value="cookie"></p>
+                    </label>
+                </label>
+
+                <h5>Rowan has many colleges within itself which house all the different majors. They are as follows:</h5>
+
+                <!-- nested list -->
+                <div class="majors">
+                    <ol>
+                        <li>Rohrer College of Business</li>
+                            <ul>
+                                <li>Accounting</li>
+                                <li>Entrpreneurship</li>
+                                <li>Finance</li>
+                                <li>Human Resources Management</li>
+                                <li>Management</li>
+                                <li>Management Information Systems</li>
+                                <li>Marketing</li>
+                                <li>Supply Chain and Logistics</li>
+                            </ul>
+                        <li>College of Education</li>
+                            <ul>
+                                <li>Early Childhood Education (P-3) (B.A. in Education)</li>
+                                <li>Elementary Education (K-6) (B.A. in Education)</li>
+                                <li>Health and Physical Education (B.A. in Education)</li>
+                                <li>B.A. in Inclusive Education</li>
+                                <li>B.A. in Leadership and Social Innovation</li>
+                                <li>B.A. in Literacy Studies</li>
+                                <li>Subject-Matter Education (P-12) (B.A. in Education)</li>
+                                <li>English</li>
+                                <li>World Languages (Spanish)</li>
+                                <li>Social Studies</li>
+                                <li>Subject Matter Education (P-12) (B.A. in Education)  </li>
+                                <li>Art</li>
+                                <li>Music</li>
+                            </ul>
+                        <li>Henry M. Rowan College of Engineering</li>
+                            <ul>
+                                <li>Biomedical Engineering</li>
+                                <li>Chemical Engineering</li>
+                                <li>Civil & Environmental Engineering</li>
+                                <li>Electrical & Computer Engineering</li>
+                                <li>Experiential Engineering Education (ExEEd)</li>
+                                <li>Mechanical Engineering</li>
+                            </ul>
+                        <li>College of Humanities & Social Sciences</li>
+                            <ul>
+                                <li>Africana Studies</li>
+                                <li>American Studies</li>
+                                <li>Anthropology</li>
+                                <li>Area Studies</li>
+                                <li>Disaster Preparedness and Emergency Management</li>
+                                <li>Economics</li>
+                                <li>English</li>
+                                <li>General Studies</li>
+                                <li>History</li>
+                                <li>Human Services</li>
+                                <li>International Studies</li>
+                                <li>Asian Studies</li>
+                                <li>European and Russian Studies</li>
+                                <li>Latin American and Iberian Studies</li>
+                                <li>Law & Justice Studies</li>
+                                <li>Liberal Studies</li>
+                                <li>Modern Languages & Linguistics</li>
+                                <li>Philosophy</li>
+                                <li>Political Science</li>
+                                <li>Sociology and Anthropology</li>
+                                <li>Spanish</li>
+                                <li>World Religions</li>
+                            </ul>
+                        <li>College of Science & Mathematics</li>
+                            <ul>
+                                <li>Biochemistry</li>
+                                <li>Bioinformatics</li>
+                                <li>Biological Science</li>
+                                <li>Biophysics</li>
+                                <li>Chemistry</li>
+                                <li>Computer Science</li>
+                                <li>Computing & Informatics</li>
+                                <li>Mathematics</li>
+                                <li>Molecular & Cellular Biology</li>
+                                <li>Physics</li>
+                                <li>Psychology</li>
+                                <li>Psychological Science</li>
+                                <li>Translational Biomedical Sciences</li>
+                            </ul>
+                        <li>School of Earth & Enviornment</li>
+                            <ul>
+                                <li>Environmental Science </li>
+                                <li>Environmental Science</li>
+                                <li>Environmental and Sustainability Studies</li>
+                                <li>Geography</li>
+                                <li>Geographical Information Science</li>
+                                <li>Community and Environmental Planning</li>
+                                <li>Geology with Concentrations in</li>
+                                    <ul>
+                                        <li>General Geoscience</li>
+                                        <li>Applied Geology</li>
+                                        <li>Paleontology</li>
+                                        <li>Global Climate Change</li>
+                                    </ul>
+                                
+                                <li>Geology</li>
+                            </ul>
+                        <li>Ric Edelman College of Communication & Creative Arts</li>
+                        <ul>
+                            <li>Advertising</li>
+                            <li>Applied Professional Communication</li>
+                            <li>Art</li>
+                            <li>Studio Art (BFA)</li>
+                            <li>Art Education</li>
+                            <li>Biomedical Art & Visualization (BFA)</li>
+                            <li>Communication Studies</li>
+                            <li>Health and Science Communication</li>
+                            <li>Journalism</li>
+                            <li>Public Relations</li>
+                            <li>Radio, Television & Film</li>
+                            <li>Sports Communication and Media</li>
+                            <li>Writing Arts</li>
+                        </ul>
+                    </ol>
+                </div>
+                <a name="six"></a>
+                <label><h5><span>Question 6</span>: What college is your major in?</h5> <!-- this was drop down list -->
+                    <select name="college">
+                        <option value="business">Rohrer College of Business</option>
+                        <option value="education">College of Education</option>
+                        <option value="engineering">Henry M. Rowan College of Engineering</option>
+                        <option value="humanities">College of Humanities & Social Sciences</option>
+                        <option value="science/math">College of Science & Mathematics</option>
+                        <option value="enviornment">School of Earth & Enviornment</option>
+                        <option value="communication">Ric Edelman College of Communication & Creative Arts</option>
+                    </select>
+                </label>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+h2 {
+    text-align: center;
+
+}
+
+.container {
+    border: 2px solid black;
+    width: 500px;
+    margin: 0px auto; /* centers div text aligned */
+}
+
+#text-container {
+    height: 120px;
+}
+
+.text-content {
+    text-align: center;
+    margin: 50px;
+}
+
+.para-one {
+    font-weight: bold;
+    /* text-decoration: underline */
+    text-decoration: line-through;
+}
+
+.para-two {
+    font-style: italic;
+}

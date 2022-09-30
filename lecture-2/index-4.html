@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms Demo</title>
+
+        <style>
+            div {
+                background-color: blue;
+                text-align: end;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Forms Tutorial</h2>
+        <p>Hello</p> <!-- these are block elements -->
+
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <br/>
+            <br/>
+            <input type="text" placeholder="Last Name" required>  
+            <br/>
+            <br/>
+            <input type="email" placeholder="Email" required>
+            <br/>
+            <br/>
+
+            <input type="submit">
+        </form>
+
+        <!-- 
+            Forms have two important attributes
+            1.) action = where you want to send data to 
+            2.) method = what type HTTP request it is
+                - POST request -> send form data to the database
+                    - example: send user and password to database
+                - GET request -> we are trying to retrieve data from the database
+                    - example: information loading on the screen
+        -->
+
+        <h2>Another Form</h2>
+        <form action="/" method="post">
+            <input type="text" placeholder="First Name" required>
+            <br/>
+            <br/>
+            <input type="text" placeholder="Surname" required>
+            <br/>
+            <br/>
+            <input type="email" placeholder="Email Address" required>
+            <br/>
+            <br/>
+            <input type="password" placeholder="Enter Password" required>
+            <br/>
+
+            <textarea rows="5" cols="10"></textarea>
+            <br/>
+            <input type="submit">
+        </form>
+
+        <h2>Another Another Form</h2>
+        <form>
+            <input type="text" placeholder="Username" name="userName" required>
+            <input type="password" placeholder="Password" name="passWord" required>
+            <input type="submit">
+        </form>
+
+        <h2>Dropdown demo</h2>
+        <form>
+            <p>You are walking alone along mdeitaion walk at Rowan and someone
+                jumps out at you and says "where are you going?"
+            </p>
+            <label>Pick a Destination <!-- this was drop down list -->
+                <select name="destination">
+                    <option value="complier">Complier Design</option>
+                    <option value="anime">Anime Club</option>
+                </select>
+            </label>
+            <br>
+            <label>Please select your major
+                <br>
+                <label>Computer Science: 
+                    <input type="radio" name="majorNameChoice" value="ComputerScience">
+                </label>
+                <label>Chemistry:
+                    <input type="radio" name="majorNameChoice" value="Chemistry">
+                </label>
+            </label>
+            <input type="submit">
+        </form>
+
+        <h2>Other input types</h2>
+        <form>
+            <label>
+                Date of birth: <input type="date" value="userDate">
+            </label>
+            <br>
+            <label>
+                What is your favorite color? <input type="color" value="color">
+            </label>
+            <br>
+            <label>
+                Please select faovire food:
+                <label>
+                    Pizza: <input type="checkbox" name="favoriteFood" value="Pizza">
+                </label>
+                <label>
+                    Indian: <input type="checkbox" name="favoriteFood" value="Indian">
+                </label>
+                <label>
+                    Chana masala: <input type="checkbox" name="favoriteFood" value="chana masala">
+                </label>
+            </label>
+            <input type="submit">
+        </form>
+
+        <h2>Nested List Demo</h2>
+        <ul>
+            <li>Japan
+                <ul>
+                    <li>Osaka</li>
+                    <li>Tokyo</li>
+                    <li>Shinjuku</li>
+                </ul>
+            </li>
+            <li>Brazil
+                <ol>
+                    <li>Sao Paulo</li>
+                    <li>Curitiba</li>
+                    <li>Rio de Jinero</li>
+                </ol>
+            </li>
+        </ul>
+
+        <h3>Divs Demo</h3>
+        <div> <!-- Parent -->
+            <h2>Capitals</h2>
+            <p>Tokyo is the capital of Japan</p>
+            <p>Kyoto is the old capital of Japan</p>
+        </div>
+
+        <!-- If you want to work with the videos -->
+        <video src="test.mp4" controls loop poster="/~barcla29/WebProgramming/lecture-2/lighthouse.png"></video>
+        <audio controls>
+            <source src="test.mp3" type="audio/mp3">
+        </audio>
+    </body>
+</html>
