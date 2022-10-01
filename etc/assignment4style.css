@@ -79,15 +79,49 @@ nav ul li {
 
 nav ul li a {
     color: #f2f2f2;
-    padding: 15px 46px; /* 17 */
+    padding: 16px 46px;
     text-decoration: none;
     font-size: 17px;
     text-transform: lowercase;
-    
 }
 
 a:hover {
     background-color:  rgba(104, 187, 212, 0.621);
-    border: 2px solid rgb(225 66 35);
+    border: rgb(225 66 35);
     border-radius: 25px;
+}
+
+.mailing-list {
+    width: fit-content;
+    border-style:inherit;
+    border: 1px solid lightgrey;
+    background-color: rgba(104, 187, 212, 0.621);
+    float: right;
+}
+
+.mailing-list p {
+}
+
+.form-div {
+    margin: 0 auto;
+}
+
+.text-field {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid lightgrey;
+    height: 20px;
+    width: 200px;
+}
+
+.button {
+    display: block;
+    font-weight: bold;
+    border-radius: 7.5px;
+    opacity: 0.4;
+    margin: 0 auto;
+}
+
+.button:hover {
+    opacity: 1;
 }
