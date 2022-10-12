@@ -1,0 +1,141 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.words {
+    display: inline-block;
+}
+
+.password {
+    border: 1px solid blue;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    background-color: lightcoral;
+    width: 90vw;
+    /* height: 70vh; */
+    font-size: 25px;
+}
+
+.password>div {
+    /* color: white; */
+    flex-wrap: wrap;
+    /* border: 1px solid grey; */
+    height: 60px;
+    width: 130px;
+    text-align: center;
+    display: inline-block;
+    /* background-color: blue; */
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: aqua;
+    }
+    .words {
+        color: aqua;
+    }
+    #the {
+        color: black;
+    }
+
+    #one {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 700px) {
+    body {
+        background-color: green;
+    }
+    .words {
+        color: green;
+    }
+    #hidden {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+    body {
+        background-color: brown;
+    }
+    .words {
+        color: brown;
+    }
+    #password {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 900px) {
+    body {
+        background-color: orange;
+    }
+    .words {
+        color: orange;
+    }
+    #is {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
+    body {
+        background-color: aqua;
+    }
+    .words {
+        color: aqua;
+    }
+    #on {
+        color: black;
+    }
+
+    #two {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+    body {
+        background-color: darkslategray
+    }
+    .words {
+        color: darkslategray;
+    }
+    #this {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1200px) {
+    body {
+        background-color: seagreen
+    }
+    .words {
+        color: seagreen;
+    }
+    #page {
+        color: black;
+    }
+
+    #three {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    body {
+        background-color: black;
+    }
+    .words {
+        color: black;
+    }
+
+    #four {
+        color: black;
+    }
+    
+}

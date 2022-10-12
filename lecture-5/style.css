@@ -1,0 +1,36 @@
+/*
+    lets write first media query to change style of H2
+    if a certain condition is true
+*/
+
+/* @media only screen and (max-width: 600px) {
+    if max width = 600px or less, apply styling
+    h2 {
+        color: blue;
+    }
+
+    .paragraph-one {
+        color: green;
+        text-decoration: underline;
+    }
+
+    #paragraph-two {
+        color: orange;
+        font-weight: bold;
+    }
+} */
+
+@media only screen and (min-width: 601px) {
+    /* if we exceed this */
+    h2, p {
+        color: green;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* if below this */
+    h2, p {
+        color: red;
+    }
+}

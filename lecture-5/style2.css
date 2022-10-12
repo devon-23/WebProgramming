@@ -1,0 +1,47 @@
+
+.container {
+    border: 2px solid blue;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    /* width: 600px; */
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 80vw;
+    border: 2px solid blue;
+    
+    display: flex;
+    flex-direction: row-reverse; row or column flex direction */
+    /* display: flex; */
+}
+
+.grid-item {
+    width: 240px;
+    height: 240px;
+    margin: 3%;
+    background-color: yellow;
+    border: 2px solid blue;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* #box-one {
+    background-color: yellow;
+    border: 2px solid blue;
+}
+
+#box-two {
+    background-color: purple;
+    border: 2px solid green;
+}
+
+#box-three {
+    background-color: red;
+    border: 2px solid black;
+} */
