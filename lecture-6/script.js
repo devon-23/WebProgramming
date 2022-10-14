@@ -1,7 +1,22 @@
-alert("Hello world again");
+const words = ['application', 'programming', 'interface', 'wizard'];
+const correctLetters = [];
+const wrongLetters = [];
 
-console.log("hello world once again")
-console.log("Web Programming class")
+// we needs to have a random word in context (from words array)
+let selectedWord = words[Math.floor(Math.random() * words.length)]
 
-console.log(1)
-console.log(1, 2, 3, 4, 5, 6)
+window.addEventListener('keydown', e => {
+    console.log(e.keyCode)
+    // want to make sure we are in the range of A-Z
+    if (e.keyCode >= 65 && e.keyCode <= 90) {
+        const letter = e.key;
+        //check if the letter typed exists in "selectedWord"
+        if(selectedWord.includes(letter)) {
+            correctLetters.push(letter);
+        } else {
+            if (!wrongLetters.includes(letter)) {
+                wrongLetters.push(letter);
+            }
+        }
+    }
+})

@@ -1,0 +1,11 @@
+.figure-container {
+    stroke: blue;
+    fill: blue;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.figure-part {
+    stroke: blue;
+    stroke-width: 4px;
+}
