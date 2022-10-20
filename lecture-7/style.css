@@ -1,0 +1,17 @@
+.calculator {
+    background: blue;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 5px 30px -5;
+}
+
+.calculator-display {
+    background-color: black;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+}

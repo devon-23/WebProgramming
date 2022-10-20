@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 6</title>
+    </head>
+    <body>
+        <h1 style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Inspect element and take a look at the log!</h1>
+    </body>
+    <script>
+        /* #1, log out 1 to 10 */
+        for (var i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+        /* #2 log out every second number from 2 to 10 */
+        for (var i = 2; i <= 10; i++) {
+            if (i%2 == 0) {
+                console.log(i)
+            }
+        }
+
+        /* #3 log out every second number from 10 to 2 */
+        for (var i = 10; i >= 2; i--) {
+            if (i%2 == 0) {
+                console.log(i)
+            }
+        }
+
+        /* #4 Log out numbers from 1 to 10 and whether they are even or odd */
+        for (var i = 1; i <= 10; i++) {
+            if (i%2 == 0) {
+                console.log(i + " is even");
+            } else {
+                console.log(i + " is odd");
+            }
+        }
+
+        /* #5 */
+        let text = prompt("#5, enter something!")
+        text = text.split("")
+        for (var i = 0; i < text.length; i++) {
+            console.log(text[i])
+        }
+
+        /* 6 */
+        let text2 = prompt("#6, enter something again!")
+        text2 = text2.split("")
+        for (var i = text2.length-1; i >= 0; i--) {
+            console.log(text2[i])
+        }
+    </script>
+</html>
