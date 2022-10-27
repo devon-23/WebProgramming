@@ -17,16 +17,21 @@ const snakearea_context = snakearea.getContext("2d");
 
 //main method
 function main() {
-
     //create time out function
     setTimeout(function onTick() {
         clearArea()
-        moveSnake()
         drawSnake()
 
-        //repeat
-        main()
+        if (moveSnake() !== 0) {
+            main()
+        }
+        
     }, 100)
+
+    setTimeout(function onTick() {
+        console.log("sdjfs")
+        main()
+    }, 10000)
 
 }
 
@@ -80,12 +85,20 @@ function clearArea() {
     snakearea_context.fillRect(0, 0, snakearea.clientWidth, snakearea.clientHeight)
 }
 
-
-
 function moveSnake() {
     const head = {x: snake[0].x + dx, y: snake[0].y + dy}
     snake.unshift(head);
     snake.pop()
+
+    if (head.x === 410 || head.x === 0 || head.y === 410 || head.x === 0) {
+        window.alert("game over")
+        return 0;
+    }
+    // if (head.y === 410) {
+    //     window.alert("game over")
+    //     return 0;
+    // }
+    return 1;
 }
 
 main();
