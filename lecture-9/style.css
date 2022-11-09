@@ -1,0 +1,23 @@
+.cities {
+    color: blue;
+    font-size: 22px;
+}
+
+.newcities {
+    color: green;
+}
+
+
+
+/* CLASS LISTS DEMO BELOW */
+.blue-class {
+    color: blue;
+}
+
+.red-class {
+    color: red;   
+}
+
+.green-class {
+    color: green;
+}
