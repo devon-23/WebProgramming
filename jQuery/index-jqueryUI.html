@@ -1,0 +1,92 @@
+<!-- 
+    https://jqueryui.com/
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <title>jQuery Demo</title>
+
+        <style>
+            #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+            #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+            #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+            #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+            #sortable li span { position: absolute; margin-left: -1.3em; }
+  </style>
+           
+
+    </head>
+    <body>
+
+        <!-- PART 1 
+        <div id="draggable" class="ui-widget-content">
+            <p>Drag me to my target</p>
+          </div>
+        -->
+          <!--
+              PART 2 
+          <div id="droppable" class="ui-widget-header">
+            <p>Drop here</p>
+          </div>
+        -->
+
+        <!-- PART 3
+        <ul id="sortable">
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+          </ul>
+        -->
+
+
+       <!-- PART 4 -->
+        <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+              this is section 1
+                
+            </div>
+            <h3>Section 2</h3>
+            <div>
+              this is section 2
+            </div>
+            <h3>Section 3</h3>
+            <div>
+              <p>
+                This is section 3 in paragarph
+              </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+              <p>
+                more stuff
+              </p>
+              <p>
+              another section fo stuff
+              </p>
+            </div>
+          </div>
+
+            
+        <!-- PART 5 - REVIEW MORE OF JQUERY UI-->
+
+          <script src="scriptJQUI.js"></script>
+
+    </body>
+</html>

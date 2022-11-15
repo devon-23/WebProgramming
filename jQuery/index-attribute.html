@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <title>jQuery Demo</title>
+    </head>
+    <body>
+        
+        <p>Welcome to Brasil!</p>
+
+       <img src="sao-paulo.jpg" class="city-image">
+    
+        <button id="change-button">Change Image</button>
+
+        <script>
+            $('#change-button').click(()=>{
+                $('.city-image').attr('src','./rio.jpg')
+            });
+        </script>
+    </body>
+</html>

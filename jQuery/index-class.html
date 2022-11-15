@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>jQuery Demo</title>
+    </head>
+    <body>
+        
+        <p>I can be a blue or black line of text!</p>
+
+        <button id="add-class">Add Class</button>
+        <button id="remove-class">Remove Class</button>
+
+        <script>
+            $('#add-class').click( ()=> {
+                console.log('clicked...');
+                $('p').addClass('blue-class');
+            });
+
+
+            $('#remove-class').click( ()=> {
+                console.log('clicked...');
+                $('p').removeClass('blue-class');
+            });
+        </script>
+    </body>
+</html>
